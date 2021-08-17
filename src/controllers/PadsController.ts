@@ -9,7 +9,7 @@ class PadsController {
        const serializePads = pads.map(pad => {
            return {
                ...pad,
-               pad_url: `http://localhost:3333/uploads/${pad.link}`
+               pad_url: `http://localhost:3333/uploads/pads/${pad.link}`
            }
        })
 
