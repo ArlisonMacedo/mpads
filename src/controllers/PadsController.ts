@@ -13,7 +13,7 @@ class PadsController {
            }
        })
 
-       return response.send(serializePads)
+       return response.json(serializePads)
    }
 }
 
