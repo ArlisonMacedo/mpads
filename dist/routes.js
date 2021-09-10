@@ -1,0 +1,23 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var PadsController_1 = __importDefault(require("./controllers/PadsController"));
+var PadShimmerController_1 = __importDefault(require("./controllers/PadShimmerController"));
+var MotionsPadController_1 = __importDefault(require("./controllers/MotionsPadController"));
+var HilsongPadController_1 = __importDefault(require("./controllers/HilsongPadController"));
+var AmbientPadController_1 = __importDefault(require("./controllers/AmbientPadController"));
+var routes = express_1.Router();
+routes.get('/warm_pads', PadsController_1.default.index);
+routes.get('/warm_pads/:id', PadsController_1.default.show);
+routes.get('/pad_shimmer', PadShimmerController_1.default.index);
+routes.get('/pad_shimmer/:id', PadShimmerController_1.default.show);
+routes.get('/motions_pad', MotionsPadController_1.default.index);
+routes.get('/motions_pad/:id', MotionsPadController_1.default.show);
+routes.get('/hilsong_pad', HilsongPadController_1.default.index);
+routes.get('/hilsong_pad/:id', HilsongPadController_1.default.show);
+routes.get('/ambient_pad', AmbientPadController_1.default.index);
+routes.get('/ambient_pad/:id', AmbientPadController_1.default.show);
+exports.default = routes;
