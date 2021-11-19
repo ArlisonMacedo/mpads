@@ -10,6 +10,7 @@ class MotionsPadController {
             return {
                 ...pad,
                 pad_url: `http://193.161.193.99:38026/uploads/hilsong_pad/${pad.link}`
+
             }
         })
 
