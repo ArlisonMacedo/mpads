@@ -9,7 +9,7 @@ class MotionsPadController {
         const serializePads = pads.map(pad => {
             return {
                 ...pad,
-                pad_url: `http://localhost:3333/uploads/motions_pad/${pad.link}`
+                pad_url: `http://193.161.193.99:38026/uploads/motions_pad/${pad.link}`
             }
         })
 
@@ -26,7 +26,7 @@ class MotionsPadController {
 
         const serializePad = {
             ...pad,
-            pad_url: `http://localhost:3333/uploads/motions_pad/${pad.link}`
+            pad_url: `http://193.161.193.99:38026/uploads/motions_pad/${pad.link}`
         }
 
         return response.json(serializePad)

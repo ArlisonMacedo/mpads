@@ -9,7 +9,7 @@ class PadShimmerController {
         const serializePads = pads.map(pad => {
             return {
                 ...pad,
-                pad_url: `http://localhost:3333/uploads/pad_shimmer/${pad.link}`
+                pad_url: `http://193.161.193.99:38026/uploads/pad_shimmer/${pad.link}`
             }
         })
 
@@ -26,7 +26,7 @@ class PadShimmerController {
 
         const serializePad = {
             ...pad,
-            pad_url: `http://localhost:3333/uploads/pad_shimmer/${pad.link}`
+            pad_url: `http://193.161.193.99:38026/uploads/pad_shimmer/${pad.link}`
         }
 
         return response.json(serializePad)

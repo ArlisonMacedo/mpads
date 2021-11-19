@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "tsnd --respawn --transpile-only --ignore-watch node_modules src/server.ts",
     "knex:migrate": "knex --knexfile ./src/knexfile.ts migrate:latest",
-    "knex:seed": "knex --knexfile ./src/knexfile.ts seed:run"
+    "knex:seed": "knex --knexfile ./src/knexfile.ts seed:run",
+    "knex:migrate:prod": "knex --knexfile ./dist/knexfile.js migrate:latest",
+    "knex:seed:prod": "knex --knexfile ./dist/knexfile.js seed:run",
+    "start": "node ./dist/server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
