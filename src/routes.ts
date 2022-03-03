@@ -12,6 +12,7 @@ import EnvolvingPadController from './controllers/EnvolvingPadController'
 import HilsongPad2Controller from './controllers/HilsongPad2Controller'
 import OrganChoirPadController from './controllers/OrganChoirPadController'
 import WorshipSolutionPadController from './controllers/WorshipSolutionPadController'
+import InforPadsController from './controllers/InforPadsController'
 
 
 const routes = Router()
@@ -30,6 +31,9 @@ routes.get('/ambient_pad', AmbientPadController.index)
 routes.get('/ambient_pad/:id', AmbientPadController.show)
 routes.get('/guitar_pad', GuitarPadControllers.index)
 routes.get('/guitar_pad/:id', GuitarPadControllers.show)
+
+/** INFOR PADS */
+routes.get('/infor_pads', InforPadsController.index)
 
 /** NEXT UPDATEDING */
 

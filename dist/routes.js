@@ -17,6 +17,7 @@ var EnvolvingPadController_1 = __importDefault(require("./controllers/EnvolvingP
 var HilsongPad2Controller_1 = __importDefault(require("./controllers/HilsongPad2Controller"));
 var OrganChoirPadController_1 = __importDefault(require("./controllers/OrganChoirPadController"));
 var WorshipSolutionPadController_1 = __importDefault(require("./controllers/WorshipSolutionPadController"));
+var InforPadsController_1 = __importDefault(require("./controllers/InforPadsController"));
 var routes = express_1.Router();
 routes.get('/warm_pads', PadsController_1.default.index);
 routes.get('/warm_pads/:id', PadsController_1.default.show);
@@ -30,6 +31,8 @@ routes.get('/ambient_pad', AmbientPadController_1.default.index);
 routes.get('/ambient_pad/:id', AmbientPadController_1.default.show);
 routes.get('/guitar_pad', GuitarPadControllers_1.default.index);
 routes.get('/guitar_pad/:id', GuitarPadControllers_1.default.show);
+/** INFOR PADS */
+routes.get('/infor_pads', InforPadsController_1.default.index);
 /** NEXT UPDATEDING */
 routes.get('/agudo_pad', AgudoPadController_1.default.index);
 routes.get('/agudo_pad/:id', AgudoPadController_1.default.show);
