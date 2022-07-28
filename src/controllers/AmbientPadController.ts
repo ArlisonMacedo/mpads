@@ -9,7 +9,7 @@ class AmbientPadController {
         const serializePads = pads.map(pad => {
             return {
                 ...pad,
-                pad_url: `http://193.161.193.99:38026/uploads/ambient_pad/${pad.link}`
+                pad_url: `http://191.252.212.139:3333/uploads/ambient_pad/${pad.link}`
             }       
         })
 
@@ -26,7 +26,7 @@ class AmbientPadController {
 
         const serializePad = {
             ...pad,
-            pad_url: `http://193.161.193.99:38026/uploads/ambient_pad/${pad.link}`
+            pad_url: `http://191.252.212.139:3333/uploads/ambient_pad/${pad.link}`
         }
 
         return response.json(serializePad)

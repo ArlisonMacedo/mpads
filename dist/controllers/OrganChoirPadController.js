@@ -63,7 +63,7 @@ var OrganChoirPadController = /** @class */ (function () {
                     case 1:
                         pads = _a.sent();
                         serializePads = pads.map(function (pad) {
-                            return __assign(__assign({}, pad), { pad_url: "http://193.161.193.99:38026/uploads/organ_choir_pad/" + pad.link });
+                            return __assign(__assign({}, pad), { pad_url: "http://191.252.212.139:3333/uploads/organ_choir_pad/" + pad.link });
                         });
                         return [2 /*return*/, response.json(serializePads)];
                 }
@@ -83,7 +83,7 @@ var OrganChoirPadController = /** @class */ (function () {
                                 .select('*')];
                     case 1:
                         pad = _a.sent();
-                        serializePad = __assign(__assign({}, pad), { pad_url: "http://193.161.193.99:38026/uploads/organ_choir_pad/" + pad.link });
+                        serializePad = __assign(__assign({}, pad), { pad_url: "http://191.252.212.139:3333/uploads/organ_choir_pad/" + pad.link });
                         return [2 /*return*/, response.json(serializePad)];
                 }
             });
