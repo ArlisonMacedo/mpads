@@ -10,7 +10,7 @@ class AmbientPadController {
             return {
                 ...pad,
                 pad_url: `http://191.252.212.139:3333/uploads/ambient_pad/${pad.link}`
-            }       
+            }
         })
 
         return response.json(serializePads)

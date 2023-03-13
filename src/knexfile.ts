@@ -1,9 +1,12 @@
 import path from 'path'
 
 module.exports = {
-    client: 'sqlite3',
+    client: 'pg',
     connection: {
-        filename: path.resolve(__dirname, 'database', 'database.sqlite')
+        host: 'salt.db.elephantsql.com',
+        user: 'ekkqtnev',
+        password: '3Vk5ua3rFolCYbOIXqBjL4TnDByqUjKN',
+        database: 'ekkqtnev'
     },
     useNullAsDefault: true,
     migrations: {
