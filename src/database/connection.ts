@@ -3,12 +3,9 @@ import path from 'path'
 
 
 const connection = knex({
-    client: 'pg',
+    client: 'sqlite3',
     connection: {
-        host: 'salt.db.elephantsql.com',
-        user: 'ekkqtnev',
-        password: '3Vk5ua3rFolCYbOIXqBjL4TnDByqUjKN',
-        database: 'ekkqtnev'
+        filename: 'src/database/database.sqlite'
     },
     migrations: {
         directory: path.resolve(__dirname, 'database', 'migrations')
